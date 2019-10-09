@@ -1,0 +1,67 @@
+IF
+   Global("WEGOTSNAKES","GLOBAL",0)
+   Global("SarevokAlive","GLOBAL",4)
+   InParty(Myself)
+   AreaCheck("AR4500")
+THEN
+   RESPONSE #100
+      SetGlobalTimer("SNAKETIMER","GLOBAL",15)
+      SetGlobal("WEGOTSNAKES","GLOBAL",1)
+END
+
+IF
+   GlobalTimerExpired("SNAKETIMER","GLOBAL")
+   Global("WEGOTSNAKES","GLOBAL",1)
+   InParty(Myself)
+   AreaCheck("AR4500")
+   See(Player1)
+   !StateCheck(Player1,STATE_SLEEPING)
+   CombatCounter(0)
+THEN
+   RESPONSE #100
+      SetGlobal("WEGOTSNAKES","GLOBAL",2)
+      StartDialogueNoSet(Player1)
+END
+
+IF
+   Dead("JL#SN01")
+   Dead("JL#SN02")
+   Dead("JL#SN03")
+   Dead("JL#SN04")
+   Global("WEGOTSNAKES","GLOBAL",4)
+   AreaCheck("AR4500")
+   InParty(Myself)
+   See(Player1)
+   !StateCheck(Player1,STATE_SLEEPING)
+   !StateCheck(Myself,STATE_SLEEPING)
+   CombatCounter(0)
+THEN
+   RESPONSE #100
+      Wait(3)
+      SetGlobal("WEGOTSNAKES","GLOBAL",5)
+      StartDialogueNoSet(Player1)
+END
+
+IF
+   Dead("JL#SN01")
+   Dead("JL#SN02")
+   Dead("JL#SN03")
+   Dead("JL#SN04")
+   Global("WEGOTSNAKES","GLOBAL",4)
+   OR(3)
+      !AreaCheck("AR4500")
+      !InParty("Imoen2")
+      Dead("Imoen2")
+THEN
+   RESPONSE #100
+      SetGlobal("WEGOTSNAKES","GLOBAL",10)
+END
+
+IF
+   Global("WEGOTSNAKES","GLOBAL",7)
+   PartyRested()
+THEN
+   RESPONSE #100
+      StartDialogueNoSet(Player1)
+END
+
