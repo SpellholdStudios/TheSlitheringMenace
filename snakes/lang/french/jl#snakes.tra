@@ -1,0 +1,54 @@
+@0 = ~Hmm, je me demande ce que produit ce sortilège...~
+@1 = ~Hein ?!~
+@2 = ~Euhh... héhéhé... oups ?~
+@3 = ~Bien joué, Imoen.~
+@4 = ~Je prend le moche !~
+@5 = ~Je veux que ces fichus serpents DÉGAGENT de ma fichue Antichambre !~
+@6 = ~Euh, ce n'était pas une remarque sympa, hein ?~
+@7 = ~Laisse tomber, tu pourras m'engueuler une autre fois, quand nous ne serons pas sur le point d'être dévorés par des serpents.~
+@8 = ~Ils sont *tous* moches !~
+@9 = ~A ce propos, *tu* nettoieras les cadavres une fois qu'ils seront tous morts.~
+@10 = ~Tu n'as pas tort. Allez, débarrassons-nous en.~
+@11 = ~Je m'occuperai de toi *après* que nous ayons réglé ce problème de serpents.~
+@12 = ~Euh... je suis désolée...~
+@13 = ~C'est pas grave, on a vu pire. Essaie juste de me prévenir un peu plus tôt, la prochaine fois.~
+@14 = ~Par les Neuf Enfers, pourquoi fallait-il que tu provoques ce *désastre* ?~
+@15 = ~Il y a des morceaux de serpent *partout* ! Qui va nettoyer, maintenant ?~
+@16 = ~Argh ! D'accord, je m'en charge, je m'en charge.~
+@17 = ~Euh... Je suppose qu'il n'est pas possible de tout nettoyer à grande eau...?~
+@18 = ~Hé, arrête ton char ! Si tu n'étais pas capable de t'occuper de quelques serpents répugnants, nous ne serions pas arrivés jusqu'ici, si ?~
+@19 = ~Maintenant, assieds-toi et repose-toi un peu pendant que je nettoie toutes ces saletés. Tu te sentiras mieux une fois que cet endroit sera redevenu propre.~
+@20 = ~Hum, et tu as tout intérêt à t'asseoir bien confortablement, car on dirait bien que ça va prendre un certain temps.~
+@21 = ~Je suppose qu'il n'est pas possible de tout nettoyer à grande eau...?~
+@22 = ~Pfiou. Je suis bien contente que tu ne sois pas furax après moi.~
+@23 = ~Je suppose que je devrais tout nettoyer, non ?~
+@24 = ~Non, vraiment, j'insiste. Assieds-toi à un endroit qui ne soit pas recouvert de cette substance gluante, et je m'en occupe.~
+@25 = ~Bêêêh...~
+@26 = ~Des tripes de serpents par-ci...~
+@27 = ~Des tripes de serpents par-là...~
+@28 = ~J'en ai ASSEZ de ces serpents !~
+@29 = ~Ah, tu es réveillé ? Est-ce qu'on pourrait simplement... ne plus jamais, jamais reparler de cette histoire ?~ ~Ah, tu es réveillée ? Est-ce qu'on pourrait simplement... ne plus jamais, jamais reparler de cette histoire ?~
+@30 = ~Beurk.~
+@31 = ~Ah, je suppose que quelque chose de bien en est ressorti, après tout. Tiens, je vais te laisser ces... choses. Et garde-les... hors de ma vue.~
+@32 = ~Des serpents dans l'Antichambre
+
+Après une bataille inattendue contre un nombre conséquent de serpents, Imoen a appris, je l'espère, qu'il ne faut jamais lancer de sort dont on ne connaît pas l'effet. En guise d'excuses pour avoir recouvert mon Antichambre de tripes reptiliennes, elle m'a offert une paire de mules en peau de serpent.~
+
+// NPCs
+@33 = ~Quoi... Par l'enfer ? Des serpents !~
+@34 = ~Bouh, regarde ! Des serpents !~
+@35 = ~Pourquoi avons-nous des serpents dans l'Antichambre, au juste ?~
+@36 = ~Et dire que je viens juste de *m'acheter* un nouveau sac à main...~
+@37 = ~A... AAAAHH ! DES SERPENTS !~
+@38 = ~Ah, nous voilà maintenant attaqués par des serpents maléfiques ! Ce plan ne cessera jamais de m'étonner !~
+@39 = ~Des serpents ! Des serpents étrangers à la Nature !~
+@40 = ~Les serpents n'attaquent pas, sauf si on les provoque.~
+@41 = ~Nous devons nous protéger de ces serpents !~
+@42 = ~Vous savez, tout cela me rappelle une histoire que mon oncle Sam me racontait...~
+@43 = ~Des serpents qui apparaissent soudainement ! Des serpents par centaines ! Quelle sorcellerie est-ce donc que cela !~
+@44 = ~Des serpents. Des serpents ? Des serpents !~
+@45 = ~Arrr, des serpents ! J'venais à peine de nettoyer ma hache !~
+@46 = ~Des s-serpents ! Si ma tante apprenait ça, je n'en verrai plus la fin.~
+@47 = ~Par Arvoreen ! Des serpents !~
+
+@48 = ~Hssss !~
