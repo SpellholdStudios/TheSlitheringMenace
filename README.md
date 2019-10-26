@@ -86,10 +86,10 @@ The installer includes one single component, the main component.
 <p></br>
 In order to play this mod, there are three things you must do:
 <ul>
-<il>You must have Imoen in your party,</il>
-<il>You must have finished your negotiations with Sarevok's wraith, and</il>
-<il>You must be in the pocket plane.</il>
-<ul>
+<li>You must have Imoen in your party,</li>
+<li>You must have finished your negotiations with Sarevok's wraith, and</li>
+<li>You must be in the pocket plane.</li>
+</ul>
 
 Once these conditions are met, the "quest" will start automatically in a few moments. You should not need to start a new game.
 </p>
