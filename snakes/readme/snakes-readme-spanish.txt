@@ -2,7 +2,7 @@
 *               La Amenaza Deslizante               *
 *      (O, "Serpientes en un Bolsillo Planar")      *
 *   Un mod para Baldur's Gate II: Throne of Bhaal   *
-*                    Version 4.0                    *
+*                  Version 4.0.0                    *
 *            Contact: jonalun@gmail.com             *
 *****************************************************
 
@@ -39,24 +39,27 @@ Instalación:
 Versions History:
 =================
 
-Version 4.0.0 (, 2019)
+Version 4.0.0 (November, 2019)
 - Renamed Setup-SNAKES.tp2 -> snakes.tp2 to support AL|EN's "Project Infinity".
 - Added snakes.ini metadata file to support AL|EN's "Project Infinity".
 - Fixed Snake-skin loafers (jl#shoes.itm): Added opcodes #267 Protection from Display Specific String (14000 "Slow" and 14668 "Slowed") and #169 Immunity Special Effect Icon (41 Slow).
 - Added ADD_JOURNAL new WeiDU command for EE games.
-- Revamped script jl#snakes.baf: Replaced old-school trigger conditions !StateCheck("XXX",STATE_SLEEPING) with me accurate !StateCheck("XXX",CD_STATE_NOTVALID).
+- Revamped script jl#snakes.baf: Replaced old-school trigger conditions !StateCheck("XXX",STATE_SLEEPING) with more accurate CamDawg's !StateCheck("XXX",CD_STATE_NOTVALID).
 - Revamped jl#snakes.d: Replaced old-school ~IsValidForPartyDialogue("XXX")~ conditions with more accurate ~InParty("XXX") InMyArea("XXX") !StateCheck("XXX",CD_STATE_NOTVALID)~ and all APPEND banter files with CHAIN.
-- Added missing jl#snakes.tra file in HANDLE_CHARSETS array function.
-- Reorganized mod architecture tree: created or renamed folders to sort files according to their types.
-- Reorganized component (DESIGNATED number).
+- Added missing *jl#snakes.tra* file in reload array HANDLE_CHARSETS function.
+- Reorganized component (DESIGNATED number) and added LABEL "The_Slithering_Menace".
 - Added REQUIRE_PREDICATE process to avoid installing the mod in inaccurate games.
+- Added README command in tp2.
 - Replaced AUTHOR keyword with SUPPORT.
 - Added VERSION flag
-- Updated and renamed readme files to <em>snakes-readme-%LANGUAGE%</em>.
+- Updated and renamed readme files to snakes-readme-%LANGUAGE%.txt.
+- Added German, Italian (thanks Salk!) and Spanish WeiDU prompts.
 - Updated translations (Gwendolyne).
+- Reorganized mod architecture tree: created or renamed folders to sort files according to their types.
+- Included Linux and Mac Os X versions in the same package (thanks AL|EN!).
 
 Version 3.5 (July 31, 2019)
-- Added BG2EE compatibility by Deratiseur.
+- Added native BG2EE compatibility by Deratiseur.
 - Updated WeiDU installer to v246.
 
 Version 3.4 (August 8, 2009)
