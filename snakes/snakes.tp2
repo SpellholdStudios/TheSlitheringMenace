@@ -1,0 +1,85 @@
+BACKUP ~snakes\Backup~
+//AUTHOR ~jonalun@gmail.com~
+SUPPORT ~http://www.shsforums.net/topic/24421-the-slithering-menace-tob-only-v400/~
+
+VERSION ~v4.0.0~
+
+README ~snakes/readme/snakes-readme-%LANGUAGE%.txt~ ~snakes/readme/snakes-readme-english.txt~
+
+
+ALWAYS
+
+	/* Converts tra files to UTF-8 */
+	ACTION_DEFINE_ARRAY jl_reload BEGIN setup jl#snakes END
+	ACTION_DEFINE_ARRAY jl_noconvert BEGIN END
+	LAF HANDLE_CHARSETS
+		INT_VAR
+			infer_charset = 1
+		STR_VAR
+			tra_path = EVAL ~%MOD_FOLDER%/lang~
+			noconvert_array = jl_noconvert
+			reload_array = jl_reload
+	END
+
+	/* CamDawg's custom IsValidForPartyDialogue() state. Thanks Cam!
+	   covers STATE_CONFUSED, STATE_FEEBLEMINDED, STATE_SILENCED, STATE_DEAD, STATE_ACID_DEATH, STATE_FLAME_DEATH, STATE_EXPLODING_DEATH, STATE_STONE_DEATH, STATE_FROZEN_DEATH, STATE_HELPLESS, STATE_STUNNED, STATE_PANIC, STATE_BERSERK, STATE_SLEEPING */
+	APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+
+END
+
+AUTO_TRA ~snakes/lang/%s~
+
+LANGUAGE ~English~
+		 ~english~
+         ~snakes/lang/english/setup.tra~
+
+LANGUAGE ~French (traduction : La Voix 2 la Sagesse)~
+		 ~french~
+         ~snakes/lang/french/setup.tra~
+
+LANGUAGE ~Deutsch (Uebersetzung von Gerri)~
+		 ~german~
+         ~snakes/lang/german/setup.tra~
+
+LANGUAGE ~Italiano (translation by Giuseppe)~
+		 ~italian~
+         ~snakes/lang/italian/setup.tra~
+
+LANGUAGE ~Russian (translation by Casso & aerie.ru)~
+		 ~russian~
+         ~snakes/lang/russian/setup.tra~
+
+LANGUAGE ~Espanol (traduccion por Clan REO)~
+		 ~spanish~
+         ~snakes/lang/spanish/setup.tra~
+
+
+/* =========================== *
+ *    The Slithering Menace    *
+ * =========================== */
+
+BEGIN @0
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
+DESIGNATED 0 LABEL "The_Slithering_Menace"
+
+COPY ~snakes/cre/jl#sn01.cre~ ~override~
+	SAY NAME1 @11
+	SAY NAME2 @11
+
+COPY ~snakes/cre/jl#sn02.cre~ ~override~
+	 ~snakes/cre/jl#sn03.cre~ ~override~
+	 ~snakes/cre/jl#sn04.cre~ ~override~
+	SAY NAME1 @12
+	SAY NAME2 @12
+
+COPY ~snakes/itm/jl#shoes.itm~ ~override~
+	SAY NAME1 @13
+	SAY NAME2 @13
+	SAY DESC @14
+
+// BGII:EE - ADD_JOURNAL command
+ADD_JOURNAL @32 USING ~snakes/tra/%LANGUAGE%/jl#snakes.tra~
+
+COMPILE ~snakes/dlg/jl#snakes.d~
+
+EXTEND_TOP ~imoe25.bcs~ ~snakes/baf/jl#snakes.baf~
