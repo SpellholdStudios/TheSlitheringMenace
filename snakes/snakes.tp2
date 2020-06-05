@@ -1,4 +1,4 @@
-BACKUP ~snakes\Backup~
+BACKUP ~snakes\backup~
 //AUTHOR ~jonalun@gmail.com~
 SUPPORT ~http://www.shsforums.net/topic/24421-the-slithering-menace-tob-only-v400/~
 
@@ -10,11 +10,11 @@ README ~snakes/readme/snakes-readme-%LANGUAGE%.txt~ ~snakes/readme/snakes-readme
 ALWAYS
 
 	/* Converts tra files to UTF-8 */
-	ACTION_DEFINE_ARRAY jl_reload BEGIN setup jl#snakes END
+	ACTION_DEFINE_ARRAY jl_reload BEGIN setup END
 	ACTION_DEFINE_ARRAY jl_noconvert BEGIN END
 	LAF HANDLE_CHARSETS
 		INT_VAR
-			infer_charset = 1
+			infer_charsets = 1
 		STR_VAR
 			tra_path = EVAL ~%MOD_FOLDER%/lang~
 			noconvert_array = jl_noconvert
@@ -41,7 +41,7 @@ LANGUAGE ~Deutsch (Uebersetzung von Gerri)~
 		 ~german~
          ~snakes/lang/german/setup.tra~
 
-LANGUAGE ~Italiano (translation by Giuseppe)~
+LANGUAGE ~Italiano (traduzione di Giuseppe)~
 		 ~italian~
          ~snakes/lang/italian/setup.tra~
 
@@ -57,10 +57,9 @@ LANGUAGE ~Espanol (traduccion por Clan REO)~
 /* =========================== *
  *    The Slithering Menace    *
  * =========================== */
-
 BEGIN @0
+DESIGNATED 0 LABEL "the_slithering_menace"
 REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
-DESIGNATED 0 LABEL "The_Slithering_Menace"
 
 COPY ~snakes/cre/jl#sn01.cre~ ~override~
 	SAY NAME1 @11
@@ -78,7 +77,7 @@ COPY ~snakes/itm/jl#shoes.itm~ ~override~
 	SAY DESC @14
 
 // BGII:EE - ADD_JOURNAL command
-ADD_JOURNAL @32 USING ~snakes/tra/%LANGUAGE%/jl#snakes.tra~
+ADD_JOURNAL @32 USING ~snakes/lang/%LANGUAGE%/jl#snakes.tra~
 
 COMPILE ~snakes/dlg/jl#snakes.d~
 
