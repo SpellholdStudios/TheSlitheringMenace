@@ -55,7 +55,7 @@ Version 4.0.0 (June 5th, 2020)
 - Fixed Snake-skin loafers (jl#shoes.itm): Added missing opcodes #267 Protection from Display Specific String (14000 "Slow" and 14668 "Slowed") and #169 Immunity Special Effect Icon (41 Slow).
 - Updated and renamed readme files to "snakes-readme-%LANGUAGE%.txt" and moved them into new "readme" folder.
 - Added German, Italian (thanks Salk!) and Spanish WeiDU prompts.
-- Updated translations (Gwendolyne).
+- Updated translations (Gwendolyne and Austin).
 - Reorganized mod architecture tree: created or renamed folders to sort files according to their types.
 - Lower cased files.
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).

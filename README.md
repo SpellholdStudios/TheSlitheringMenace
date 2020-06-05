@@ -3,7 +3,7 @@
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macos%20%7C%20linux&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Italian%20%7C%20Russian%20%7C%20Spanish&color=limegreen)
 
-<div align="center"><h1></a>The Slithering Menace (WIP)</h1>
+<div align="center"><h1></a>The Slithering Menace</h1>
 
 <h3>A mod hosted by Spellhold Studios for Baldur's Gate II: Throne of Bhaal (classical and EE games),
 Baldur's Gate Trilogy and EET<h3>
@@ -161,7 +161,7 @@ See more <a href="http://crack.prositen.com/SNAKES/SNAKES.html">screenshots</a>.
 - La Voix 2 la Sagesse (of the d'Oghmatiques) : Provided French translation.
 - Giuseppe: Provided Italian translation.
 - Gerri: Provided German translation.
-- Casso & aerie.ru team: Provided Russian translation.
+- Casso & aerie.ru team: Provided Russian translation (proofread by Austin).
 
 If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href="http://www.shsforums.net/topic/24421-the-slithering-menace-tob-only-v400/">mod forum</a>.</br>
 
@@ -203,7 +203,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 - Revamped script jl#snakes.baf: Replaced old-school trigger conditions `!StateCheck("XXX",STATE_SLEEPING)` with more accurate CamDawg's `!StateCheck("XXX",CD_STATE_NOTVALID)`.
 - Updated, renamed readme files to *snakes-readme-%LANGUAGE%.txt* and moved them into new "*readme*" folder.
 - Added German, Italian (thanks Salk!) and Spanish WeiDU prompts.
-- Updated translations (Gwendolyne).
+- Updated translations (Gwendolyne and Austin).
 - Reorganized mod architecture tree: created or renamed folders to sort files according to their types.
 - Lower cased files.
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
