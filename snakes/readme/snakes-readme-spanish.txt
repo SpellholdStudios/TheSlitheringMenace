@@ -39,24 +39,28 @@ Instalación:
 Versions History:
 =================
 
-Version 4.0.0 (November, 2019)
-- Renamed Setup-SNAKES.tp2 -> snakes.tp2 to support AL|EN's "Project Infinity".
-- Added snakes.ini metadata file to support AL|EN's "Project Infinity".
-- Fixed Snake-skin loafers (jl#shoes.itm): Added opcodes #267 Protection from Display Specific String (14000 "Slow" and 14668 "Slowed") and #169 Immunity Special Effect Icon (41 Slow).
-- Added ADD_JOURNAL new WeiDU command for EE games.
-- Revamped script jl#snakes.baf: Replaced old-school trigger conditions !StateCheck("XXX",STATE_SLEEPING) with more accurate CamDawg's !StateCheck("XXX",CD_STATE_NOTVALID).
+Version 4.0.0 (June 5th, 2020)
+- Added "snakes.ini" metadata file to support AL|EN's "Project Infinity".
+- Renamed "Setup-SNAKES.tp2" -> "snakes.tp2" to support AL|EN's "Project Infinity".
+- Replaced `AUTHOR` keyword with `SUPPORT`.
+- Added `VERSION` flag.
+- Added `README` command.
+- Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
+- Added component `DESIGNATED` number and "the_slithering_menace" `LABEL`.
+- Fixed "infer_charsets" variable name in `HANDLE_CHARSETS` function.
+- Added native EET compatibility.
+- Added `ADD_JOURNAL` new WeiDU command for EE games.
 - Revamped jl#snakes.d: Replaced old-school ~IsValidForPartyDialogue("XXX")~ conditions with more accurate ~InParty("XXX") InMyArea("XXX") !StateCheck("XXX",CD_STATE_NOTVALID)~ and all APPEND banter files with CHAIN.
-- Added missing *jl#snakes.tra* file in reload array HANDLE_CHARSETS function.
-- Reorganized component (DESIGNATED number) and added LABEL "The_Slithering_Menace".
-- Added REQUIRE_PREDICATE process to avoid installing the mod in inaccurate games.
-- Added README command in tp2.
-- Replaced AUTHOR keyword with SUPPORT.
-- Added VERSION flag
-- Updated and renamed readme files to snakes-readme-%LANGUAGE%.txt.
+- Revamped script jl#snakes.baf: Replaced old-school trigger conditions `!StateCheck("XXX",STATE_SLEEPING)` with more accurate CamDawg's `!StateCheck("XXX",CD_STATE_NOTVALID)`.
+- Fixed Snake-skin loafers (jl#shoes.itm): Added missing opcodes #267 Protection from Display Specific String (14000 "Slow" and 14668 "Slowed") and #169 Immunity Special Effect Icon (41 Slow).
+- Updated and renamed readme files to "snakes-readme-%LANGUAGE%.txt" and moved them into new "readme" folder.
 - Added German, Italian (thanks Salk!) and Spanish WeiDU prompts.
 - Updated translations (Gwendolyne).
 - Reorganized mod architecture tree: created or renamed folders to sort files according to their types.
-- Included Linux and Mac Os X versions in the same package (thanks AL|EN!).
+- Lower cased files.
+- Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
+- Added archive libiconv-1.9.2-1-src.7z with iconv licence info.
+- Uploaded mod to official Spellhold Studios GitHub mirror account.
 
 Version 3.5 (July 31, 2019)
 - Added native BG2EE compatibility by Deratiseur.
@@ -66,7 +70,7 @@ Version 3.4 (August 8, 2009)
 - Added Spanish translation by Clan REO.
 
 Version 3.3 (October 27, 2008)
- - Fixed a typo in tp2 AUTO_TRA line that prevented the mod to be installed properly. El mod ahora debería instalarse adecuadamente.
+ - Fixed a typo in tp2 `AUTO_TRA` line that prevented the mod to be installed properly. El mod ahora debería instalarse adecuadamente.
 
 Version 3.2 (September 12, 2008)
 - Added French translation by La Voix 2 la Sagesse (of the d'Oghmatiques)!
